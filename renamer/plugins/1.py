@@ -19,7 +19,7 @@ async def force_sub(c, m):
         except UserNotParticipant:
             button = [[InlineKeyboardButton('join Updates channel', url=f'https://t.me/{Config.FORCE_SUB}')]]
             markup = InlineKeyboardMarkup(button)
-            return await m.reply_text(text="Hey {m.from_user.mention(style='md')} you need join My updates channel in order to use me 😉\n\n"
+            return await m.reply_text(text="Hey {m.from_user.mention(style='md')} You Need To Join My Updates Channel In Order To Use Me 😉\n\n"
                 "__Press the Following Button to join Now 👇__", parse_mode='markdown', reply_markup=markup, quote=True)
 
         except ChatAdminRequired:
